@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: var( --text-color);
+}
+.title h1 {
+    margin-left: 05rem;
+    color: var(--text-color);
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.notification {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-left: 25rem;
+}
+.date {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.span-nav{
+    color: var(--text-color);
+}
+.icon-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.image {
+    display: flex;
+    gap: 1rem;
+}
+img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 3rem;
+}

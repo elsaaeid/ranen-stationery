@@ -1,0 +1,78 @@
+.sidebar_container{
+    background: var(--main-color);
+    width: 20%;
+    height: 100v;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sidebar{
+    display: flex;
+    height: 95%;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    border-radius: 10px;
+    margin: 12px;
+}
+.toggle {
+    position: absolute;
+    top: 1rem;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--text-color);
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+.profile > h3 {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    padding: 5px;
+}
+.profile > h3 > span {
+    color: var(--main-color);
+}
+.groups {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+}
+.group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+.icon{
+    margin-right: 1rem;
+}
