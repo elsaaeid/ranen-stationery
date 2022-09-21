@@ -1,14 +1,14 @@
 import React from "react";
 import {motion} from "framer-motion";
 
-export const Item = (props, open) =>{
+export const Item = (props) =>{
    const subheading = {
     true: {
         opacity: 1
     },
     false: {
         opacity: 0,
-        display: 'none'
+      
     }
    }
 

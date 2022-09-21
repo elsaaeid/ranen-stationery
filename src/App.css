@@ -2,14 +2,26 @@
     --text-color: #ffff;
     --bg-color: #cd36ff78;
     --main-color: blueviolet;
+    --hovFooter-color: #ffaeff;
     --card-color: rgb(179, 102, 250);
     --hov-card-color: rgb(196, 136, 253);
 }
-.App{
-    display: flex;
-    color: var(--text-color);
-    background: linear-gradient(179deg, #176eb5, #d545d7);
+a {
+    text-decoration: none;
+}
+.App {
+    display: inline-block;
     text-shadow: 1px 0px 2px #8dc4f0;
     height: 100vh;
 }
-
+.container {
+    margin-top: 2rem;
+}
+.body_container {
+    background: linear-gradient(307deg, #176eb5, #d16ad2);
+    flex: 1 1;
+    position: relative;
+    overflow: hidden;
+    float: right;
+    width: 80%;
+}
