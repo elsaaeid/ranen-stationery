@@ -19,6 +19,7 @@ const RoutesContainer = ({cartItems, handleAddProduct, handleRemoveProduct, Prod
               <Route exact path='/login' element={<Login />}></Route>
               <Route exact path='/cart' element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} />}></Route>
               <Route exact path='/' element={<Home ProductsDataHome={ProductsDataHome} handleAddProduct={handleAddProduct} />}></Route>
+              <Route exact path='/:id' element={<Home ProductsDataHome={ProductsDataHome} handleAddProduct={handleAddProduct} />}></Route>
               <Route path='/game' element={<Game ProductsDataGame={ProductsDataGame} handleAddProduct={handleAddProduct} />}></Route>
               <Route path='/artistTools' element={<ArtistTools ProductsDataArts={ProductsDataArts} handleAddProduct={handleAddProduct} />}></Route>
               <Route path='/pens' element={<Pens ProductsDataPen={ProductsDataPen} handleAddProduct={handleAddProduct} />}></Route>
