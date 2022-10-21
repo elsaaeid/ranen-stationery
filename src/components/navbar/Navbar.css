@@ -67,8 +67,25 @@ img {
     width: 2.5rem;
     border-radius: 3rem;
 }
-header.SearchBar-header div.results {
+div.result {
+    flex-direction: row;
+    justify-content: space-around;;
+    margin-left: 25px;
+}
+div.results {
     flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 412px) {
+    .SearchBar {
+        width: 257px;
+    }
+    }
+@media screen and (max-width: 390px) {
+.SearchBar {
+    width: 308px;
+}
 }
 @media screen and (max-width: 375px) {
     svg.sc-bczRLJ.fASA-Dv.search-icon {
@@ -76,6 +93,9 @@ header.SearchBar-header div.results {
         height: 26px;
         margin-left: 24px;
       }
+      div.result {
+        margin-left: 0px;
+    }
       header.SearchBar-header div.results {
         flex-direction: column;
         width: 8rem;

@@ -24,4 +24,5 @@ a {
     overflow: hidden;
     float: right;
     width: 80%;
+    z-index: 0;
 }

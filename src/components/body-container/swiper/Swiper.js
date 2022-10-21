@@ -7,15 +7,9 @@ import "./Swiper.css";
 
 function Swiper() {
 
-    const CarouselStyle ={
-        width: '80%',
-        height: '40rem',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        zIndex: '0'
-     }
+   
   return (
-    <Carousel style={CarouselStyle}>
+    <Carousel className="carousel-swiper">
       <Carousel.Item>
         <img
           className="swiperImg d-block"

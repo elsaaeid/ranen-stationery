@@ -27,10 +27,13 @@ function SearchBar({placeholder}) {
 
   const formatResult = (item) => {
     return (
-      <div className="results d-flex flex-col align-items-center justify-center">
+      <div className="result d-flex flex-row align-items-center">
+        <img src={item.img} alt={item.name} />
+       <div className="results d-flex flex-col align-items-center">
         <span style={{ display: 'block', textAlign: 'center' }}>name: {item.name}</span>
         <span style={{ display: 'block', textAlign: 'center' }}>description: {item.description}</span>
         <span style={{ display: 'block', textAlign: 'center' }}>price: {item.price}</span>
+       </div>
       </div>
     )
   }

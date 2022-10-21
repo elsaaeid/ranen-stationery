@@ -9,9 +9,9 @@ import pro4 from "../../product-img/art4.png";
 
 
 const dataSearch = [
-    {id: 1, name: "name", description: 'art', price: '5$', image: pro1},
-    {id: 2, name: "name", description: 'art', price: '5$', image: pro2},
-    {id: 3, name: "name", description: 'art', price: '5$', image: pro3},
-    {id: 4, name: "name", description: 'art', price: '5$', image: pro4},
+    {id: 1, img: pro1, name: "name", description: 'art', price: '5$',},
+    {id: 2, img: pro2, name: "name", description: 'art', price: '5$',},
+    {id: 3, img: pro3, name: "name", description: 'art', price: '5$',},
+    {id: 4, img: pro4, name: "name", description: 'art', price: '5$',},
   ]
   export default dataSearch;

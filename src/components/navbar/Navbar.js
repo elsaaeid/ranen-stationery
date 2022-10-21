@@ -18,7 +18,7 @@ const Navbar = ()=> {
                 </NavLink>
             </Col>
             <Col xs={12} sm={12} md={8} lg={8} className="nav-center d-flex justify-end align-items-center"> 
-                <SearchBar placeholder="Search here..."></SearchBar>
+                <SearchBar placeholder="Search..."></SearchBar>
             </Col>
         </Row>
     )

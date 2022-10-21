@@ -1,3 +1,10 @@
+.carousel-swiper {
+    width: 80%;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -5;
+}
 
 .carousel-item {
     margin-top: -12rem;
@@ -13,4 +20,86 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -86px;
+  }
+  @media screen and (max-width: 1024px) {
+  .swiperImg {
+    margin-top: 60px;
+}
+  }
+  @media screen and (max-width: 912px) {
+    .carousel-item {
+        margin-top: 1rem;
+        padding: 25px;
+    }
+    .carousel-swiper {
+    height: 12rem;
+}
+.swiperImg {
+    margin-top: -200px;
+}
+  }
+  @media screen and (max-width: 820px) {
+    .carousel-item {
+        margin-top: 1rem;
+        padding: 25px;
+    }
+    .carousel-swiper {
+    height: 12rem;
+}
+.swiperImg {
+    margin-top: -200px;
+}
+  }
+  @media screen and (max-width: 540px) {
+    .carousel-item {
+        margin-top: 1rem;
+        padding: 25px;
+    }
+    .carousel-swiper {
+    height: 12rem;
+}
+.swiperImg {
+    margin-top: -110px;
+}
+  }
+  @media screen and (max-width: 414px) {
+    .carousel-item {
+        margin-top: 1rem;
+        padding: 25px;
+    }
+    .carousel-swiper {
+    height: 12rem;
+}
+.swiperImg {
+    margin-top: -74px;
+}
+  }
+  @media screen and (max-width: 390px) {
+    .swiperImg {
+        margin-top: -78px;
+    }
+  }
+
+
+  @media screen and (max-width: 375px) {
+    .carousel-item {
+        margin-top: 1rem;
+        padding: 25px;
+    }
+    .carousel-swiper {
+    height: 12rem;
+}
+  }
+  @media screen and (max-width: 280px) {
+    .carousel-item {
+        margin-top: 1rem;
+        padding: 25px;
+    }
+    .carousel-swiper {
+    height: 12rem;
+}
+.swiperImg {
+    margin-top: -82px;
+}
   }
