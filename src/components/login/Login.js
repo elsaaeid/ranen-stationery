@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import PropTypes from 'prop-types';
-
+import { NavLink } from "react-router-dom";
 
 
 
@@ -48,7 +48,9 @@ export const Login = ({
             <hr/>
             <Row>
                 <Col>
+                <NavLink to="/reset">
                     <a href="#!" onClick={() =>formSwitcher('reset')}>Forget Password?</a>
+                </NavLink>
                 </Col>
             </Row>
         </Container>

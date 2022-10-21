@@ -8,11 +8,15 @@ import CommercialBrands from "../pages/commercial-brands/CommercialBrands";
 import Game from "../pages/games/Game";
 import ArtistTools from "../pages/artist-tools/ArtistTools";
 import SchoolBags from "../pages/school-bags/SchoolBags";
+import {Login} from "./login/Login";
+import {Reset} from "./password-reset/Reset"; 
 
 const RoutesContainer = ({cartItems, handleAddProduct, handleRemoveProduct, ProductsDataHome, ProductsDataGame, ProductsDataPen, ProductsDataDiscount, ProductsDataBrands, ProductsDataBags, ProductsDataArts}) => {
     return (
         <div>
             <Routes>
+              <Route exact path='/reset' element={<Reset />}></Route>
+              <Route exact path='/login' element={<Login />}></Route>
               <Route exact path='/cart' element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} />}></Route>
               <Route exact path='/' element={<Home ProductsDataHome={ProductsDataHome} handleAddProduct={handleAddProduct} />}></Route>
               <Route path='/game' element={<Game ProductsDataGame={ProductsDataGame} handleAddProduct={handleAddProduct} />}></Route>

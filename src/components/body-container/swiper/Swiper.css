@@ -8,3 +8,9 @@
 .carousel-item {
     padding: 50px;
 }
+.swiperImg {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }

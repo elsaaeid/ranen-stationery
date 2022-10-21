@@ -15,10 +15,12 @@ import dataItems from './components/back/Data';
 
 
 function App() {
-  
+
   const {ProductsDataHome, ProductsDataGame, ProductsDataPen, ProductsDataDiscount, ProductsDataBrands, ProductsDataBags, ProductsDataArts} = dataItems;
-  
+          //cartState
   const [cartItems, setCartItems] = useState([]);
+
+        //ADD PRODUCT
   const handleAddProduct = (product) => {
     const productExit = cartItems.find((item) => item.id === product.id);
     if(productExit){
@@ -30,7 +32,7 @@ function App() {
       setCartItems([...cartItems, {...product, quantity: + 1}])
     }
   }
-
+        //REMOVE PRODUCT
   const handleRemoveProduct = (product) => {
     const productExit = cartItems.find((item) => item.id === product.id);
     if(productExit.quantity === 1){
@@ -43,7 +45,12 @@ function App() {
     }
   }
 
+  
+  
 
+ 
+
+  
   const [open, setOpen] = useState(false);
   //for collapsing sidebar
   const handleToggle = ()=> {
@@ -51,10 +58,10 @@ function App() {
   };
   const toggleVariants = {
     true: {
-      left: '12rem',
+      left: '3rem',
     },
     false: {
-      left: '1rem',
+      left: '0rem',
       transition: {
         delay: 0.6
       }
@@ -62,7 +69,7 @@ function App() {
    };
   const sideContainerVariants = {
     true :{
-      width: '15%',
+      width: '20%',
     },
     false:{
       width: '5%',
@@ -100,7 +107,7 @@ function App() {
 
   const h3Variants = {
     true: {
-      fontSize: '30px',
+      fontSize: '25px',
     },
     false: {
       fontSize: '15px',
@@ -109,9 +116,20 @@ function App() {
       }
     }
    };
+   const spanVariants = {
+    true: {
+      display: 'flex',
+    },
+    false: {
+      display: 'none',
+      transition: {
+        delay: 0.6
+      }
+    }
+   };
   const bodyContainerVariants = {
     true :{
-      width: '85%',
+      width: '80%',
       left: '0'
     },
   false :{
@@ -152,7 +170,7 @@ function App() {
             }}
             variants={toggleVariants}
             onClick={handleToggle}          
-          className='toggle'>
+          className='toggle mt-3'>
             <MdKeyboardArrowRight />
           </motion.div>
             {/* profile */}
@@ -173,8 +191,12 @@ function App() {
             >
               <motion.h3
               variants={h3Variants}
-              
-              ><span>R</span>anen</motion.h3>
+              className="d-flex"
+              >
+                <span className="focus-profile">R</span>
+                <motion.span 
+                variants = {spanVariants}
+                >anen</motion.span></motion.h3>
             </motion.div>
           {/* groups */}
               <div className='groups'>
@@ -196,7 +218,7 @@ function App() {
             initial={`${open}`}
             animate={`${open}`}
           >  
-          <Navbar cartItems={cartItems} /> 
+          <Navbar /> 
           {/* the Routes container */}
           <RoutesContainer
           cartItems={cartItems}

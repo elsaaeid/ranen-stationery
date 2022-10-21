@@ -27,18 +27,17 @@ function SearchBar({placeholder}) {
 
   const formatResult = (item) => {
     return (
-      <div>
-        <span style={{ display: 'block', textAlign: 'left' }}>name: {item.name}</span>
-        <span style={{ display: 'block', textAlign: 'left' }}>description: {item.description}</span>
-        <span style={{ display: 'block', textAlign: 'left' }}>price: {item.price}</span>
+      <div className="results d-flex flex-col align-items-center justify-center">
+        <span style={{ display: 'block', textAlign: 'center' }}>name: {item.name}</span>
+        <span style={{ display: 'block', textAlign: 'center' }}>description: {item.description}</span>
+        <span style={{ display: 'block', textAlign: 'center' }}>price: {item.price}</span>
       </div>
     )
   }
 
   return (
-    <div className="SearchBar" style={{zIndex: '1'}}>
       <header className="SearchBar-header">
-        <div style={{ width: 400 }}>
+        <div className="SearchBar" style={{zIndex: '1'}}>
           <ReactSearchAutocomplete
             items={dataSearch}
             onSearch={handleOnSearch}
@@ -51,7 +50,6 @@ function SearchBar({placeholder}) {
           />
         </div>
       </header>
-    </div>
   )
 }
 

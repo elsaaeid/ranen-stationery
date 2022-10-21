@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import PropTypes from 'prop-types';
+import { NavLink } from "react-router-dom";
 
 
 
-
-export const ResetPassword = ({
+export const Reset = ({
     handleOnChange,
      handleOnResetSubmit,
      formSwitcher,
@@ -36,7 +36,9 @@ export const ResetPassword = ({
             <hr/>
             <Row>
                 <Col>
+                <NavLink to='/login'>
                     <a href="#!" onClick={() => formSwitcher('login')}>Login Now?</a>
+                </NavLink>
                 </Col>
             </Row>
         </Container>
@@ -44,7 +46,7 @@ export const ResetPassword = ({
 };
 
 
-ResetPassword.propTypes = {
+Reset.propTypes = {
     handleOnChange: PropTypes.func.isRequired,
     handleOnResetSubmit: PropTypes.func.isRequired,
     formSwitcher: PropTypes.func.isRequired,

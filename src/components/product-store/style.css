@@ -26,3 +26,17 @@
   margin-bottom: 43px;
   color: var(--text-color);
 }
+
+@media screen and (max-width: 375px) {
+  .MuiPaper-root {
+    width: 13rem;
+    margin: auto;
+  }
+  .body_container {
+    width: 70%;
+    left: 0px;
+}
+.sidebar_container {
+  width: 30%;
+}
+  }

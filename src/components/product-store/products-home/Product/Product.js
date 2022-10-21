@@ -4,32 +4,33 @@ import { AddShoppingCart } from '@material-ui/icons';
 import '../../style.css';
 
 
-const Product = ({ item, handleAddProduct }) => {
-  const { name, image, description, price } = item;
-  
+const Product = ({ product, handleAddProduct }) => {
+
   return (
     <Card className="root">
-      <CardMedia className="media" image={image} title={name} />
+      <CardMedia className="media" image={product.image} title={product.name} />
       <CardContent>
         <div className="cardContent">
           <Typography gutterBottom variant="h5" component="h2">
-            {description}
+            {product.name}
           </Typography>
           <Typography gutterBottom variant="h5" component="h2">
-            ${price}
+            ${product.price}
           </Typography>
         </div>
-        <Typography dangerouslySetInnerHTML={{ __html: description }} variant="body2" color="textSecondary" component="p" />
+        <Typography dangerouslySetInnerHTML={{ __html: product.description }} variant="body2" color="textSecondary" component="p" />
       </CardContent>
       <CardActions disableSpacing className="cardActions">
         <IconButton aria-label="Add to Cart">
           <AddShoppingCart 
-          onclick={() => handleAddProduct(item)} />
+          onClick={() => handleAddProduct(product)}
+          />
         </IconButton>
       </CardActions>
     </Card>
   );
 };
+
 
 export default Product;
 

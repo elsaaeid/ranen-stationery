@@ -6,12 +6,7 @@ import "./Swiper.css";
 
 
 function Swiper() {
-    const swiperImg ={
-      width: '100%',
-      height: '100%',
-      marginLeft: 'auto',
-      marginRight: 'auto',
-    }
+
     const CarouselStyle ={
         width: '80%',
         height: '40rem',
@@ -23,24 +18,21 @@ function Swiper() {
     <Carousel style={CarouselStyle}>
       <Carousel.Item>
         <img
-         style={swiperImg}
-          className="d-block"
+          className="swiperImg d-block"
           src={body1}
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-         style={swiperImg}
-          className="d-block"
+          className="swiperImg d-block"
           src={body2}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-        style={swiperImg}
-          className="d-block"
+          className="swiperImg d-block"
           src={body3}
           alt="Third slide"
         />

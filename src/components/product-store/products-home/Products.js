@@ -13,9 +13,9 @@ const Products = ({ProductsDataHome, handleAddProduct, handleRemoveProduct}) => 
       <h2 className='col'>Home</h2>
       </div>
       <Grid container justifyContent="center" spacing={4}>
-        {ProductsDataHome.map((item) => (
-          <Grid key={item.id} xs={12} sm={6} md={4} lg={3}>
-            <Product item={item} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} />
+        {ProductsDataHome.map((product) => (
+          <Grid key={product.id} item xs={12} sm={6} md={4} lg={3}>
+            <Product product={product} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} />
           </Grid>
         ))}
       </Grid>

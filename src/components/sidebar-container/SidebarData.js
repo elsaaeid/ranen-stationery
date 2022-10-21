@@ -5,6 +5,9 @@ import { FaPencilRuler } from 'react-icons/fa';
 import { TbPaperBag } from 'react-icons/tb';
 import { TbShoppingCartDiscount } from 'react-icons/tb';
 import { SiBrandfolder } from 'react-icons/si';
+import { BiLogOut } from 'react-icons/bi';
+import { AiTwotoneSetting } from 'react-icons/ai';
+
 
 const SidebarData = [
     {index: 1, icon: <BiHomeSmile/>, name: 'Home', path: '/'},
@@ -14,5 +17,7 @@ const SidebarData = [
     {index: 5, icon: <TbPaperBag/>, name: 'School Bags', path: '/schoolBags'},
     {index: 6, icon: <TbShoppingCartDiscount/>, name: 'Discount', path: '/discount'},
     {index: 7, icon: <SiBrandfolder/>, name: 'Commercial Brands', path: '/commercialBrands'},
+    {index: 9, icon: <AiTwotoneSetting/>, name: 'Settings', path: '/settings'},
+    {index: 8, icon: <BiLogOut/>, name: 'Log out', path: '/logOut'},
   ]
   export default SidebarData;
