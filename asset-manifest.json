@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ranen-stationery/static/css/main.71cd2e2d.css",
-    "main.js": "/ranen-stationery/static/js/main.42d9369b.js",
+    "main.js": "/ranen-stationery/static/js/main.96dcd4ca.js",
     "static/media/bags1.png": "/ranen-stationery/static/media/bags1.bc503cfe584733820194.png",
     "static/media/item4.png": "/ranen-stationery/static/media/item4.6edfd6bd41a2fc93c8b6.png",
     "static/media/pens3.png": "/ranen-stationery/static/media/pens3.090802a027a4dcec7da7.png",
@@ -52,10 +52,10 @@
     "static/media/arrow-left.svg": "/ranen-stationery/static/media/arrow-left.eba827e3a6a97edaed96.svg",
     "index.html": "/ranen-stationery/index.html",
     "main.71cd2e2d.css.map": "/ranen-stationery/static/css/main.71cd2e2d.css.map",
-    "main.42d9369b.js.map": "/ranen-stationery/static/js/main.42d9369b.js.map"
+    "main.96dcd4ca.js.map": "/ranen-stationery/static/js/main.96dcd4ca.js.map"
   },
   "entrypoints": [
     "static/css/main.71cd2e2d.css",
-    "static/js/main.42d9369b.js"
+    "static/js/main.96dcd4ca.js"
   ]
 }
