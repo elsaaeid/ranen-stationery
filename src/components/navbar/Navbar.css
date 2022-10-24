@@ -76,16 +76,36 @@ div.results {
     flex-direction: column;
     justify-content: space-between;
 }
+@media screen and (max-width: 820px) {
+    .SearchBar {
+        width: 205px;
+        margin-top: 24px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .SearchBar {
+        width: 205px;
+        margin-top: 24px;
+    }
+}
 
 @media screen and (max-width: 412px) {
     .SearchBar {
-        width: 257px;
+        width: 205px;
+        margin-top: 24px;
     }
+    }
+    @media screen and (max-width: 393px) {
+        .SearchBar {
+            width: 205px;
+            margin-top: 24px;
+        }
     }
 @media screen and (max-width: 390px) {
-.SearchBar {
-    width: 308px;
-}
+    .SearchBar {
+        width: 205px;
+        margin-top: 24px;
+    }
 }
 @media screen and (max-width: 375px) {
     svg.sc-bczRLJ.fASA-Dv.search-icon {

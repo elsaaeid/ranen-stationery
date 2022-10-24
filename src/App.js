@@ -69,10 +69,10 @@ function App() {
    };
   const sideContainerVariants = {
     true :{
-      width: '20%',
+      width: '30%',
     },
     false:{
-      width: '5%',
+      width: '10%',
       transition: {
         delay: 0.6
       }
@@ -129,11 +129,11 @@ function App() {
    };
   const bodyContainerVariants = {
     true :{
-      width: '80%',
+      width: '70%',
       left: '0'
     },
   false :{
-    width: '95%',
+    width: '90%',
     left: '0',
     transition: {
       delay: 0.6
