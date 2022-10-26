@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ranen-stationery/static/css/main.4f2703ad.css",
-    "main.js": "/ranen-stationery/static/js/main.7185d5e1.js",
+    "main.css": "/ranen-stationery/static/css/main.23308126.css",
+    "main.js": "/ranen-stationery/static/js/main.cafdb3b0.js",
     "static/media/bags1.png": "/ranen-stationery/static/media/bags1.bc503cfe584733820194.png",
     "static/media/item4.png": "/ranen-stationery/static/media/item4.6edfd6bd41a2fc93c8b6.png",
     "static/media/pens3.png": "/ranen-stationery/static/media/pens3.090802a027a4dcec7da7.png",
@@ -51,11 +51,11 @@
     "static/media/arrow-right.svg": "/ranen-stationery/static/media/arrow-right.c6fc555fa041160f1230.svg",
     "static/media/arrow-left.svg": "/ranen-stationery/static/media/arrow-left.eba827e3a6a97edaed96.svg",
     "index.html": "/ranen-stationery/index.html",
-    "main.4f2703ad.css.map": "/ranen-stationery/static/css/main.4f2703ad.css.map",
-    "main.7185d5e1.js.map": "/ranen-stationery/static/js/main.7185d5e1.js.map"
+    "main.23308126.css.map": "/ranen-stationery/static/css/main.23308126.css.map",
+    "main.cafdb3b0.js.map": "/ranen-stationery/static/js/main.cafdb3b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f2703ad.css",
-    "static/js/main.7185d5e1.js"
+    "static/css/main.23308126.css",
+    "static/js/main.cafdb3b0.js"
   ]
 }
