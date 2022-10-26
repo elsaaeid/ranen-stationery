@@ -5,6 +5,9 @@
     border: 2px solid black;
     border-radius: 5px;
 }
+.cart-package {
+    flex-direction: column;
+}
 .cart-items-header{
     display: flex;
     justify-content: space-around;
@@ -81,4 +84,18 @@
     display: flex;
     padding-right: 45%;
 }
-
+@media screen and (max-width: 414px) {
+    .cart-items {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .cart-items {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 280px) {
+    .cart-items {
+        width: 90%;
+    }
+}

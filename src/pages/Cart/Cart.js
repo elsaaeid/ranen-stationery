@@ -15,10 +15,12 @@ const totalPrice = cartItems.reduce((price, item)=> price + item.quantity * item
       <div>
         {cartItems.map((item)=>(
           <div key={item.id} className="cart-items-list">
-            <img className='cart-items-image' 
-            src={item.image} 
-            alt={item.name} />
-            <div className='cart-items-name'>{item.name}</div>
+            <div className='cart-package d-flex'>
+              <img className='cart-items-image' 
+              src={item.image} 
+              alt={item.name} />
+              <div className='cart-items-name'>{item.name}</div>
+            </div>
             <div className='cart-items-function'>
               <button className='cart-items-add' 
               onClick={() => handleAddProduct(item)}>+</button>
